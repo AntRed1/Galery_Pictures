@@ -5,17 +5,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="Evidenica - 4 Proyecto Guiado" content="HTM, CSS y Javascript" />
-	<title>Galery</title>
+	<meta name="Evidencia - 4 Proyecto Guiado" content="HTML, CSS y Javascript" />
+	<title>Galería</title>
 	<link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
-	<script class=" imagenes" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+	<script class="imagenes" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
 		</script>
 	<!-- Font Awesome -->
 	<script class="imagenes" src="https://kit.fontawesome.com/1ae4b6ae42.js" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
 </head>
 
 <body>
@@ -28,66 +29,89 @@
 				<div class="row container-fluid alert">
 					<div class="col col-sm-12 col-md-6 col-lg-3">
 						<div class="alert cell link-opacity-25-hover col-lg-auto col-md-auto col-sm-auto">
-							<img id="imagenes" class="imagenes" src="img/KNY/02eb3fb81290b1a94853fa492988426f.jpg"
-								alt="Images KNY" title="Kyōjurō Rengoku">
+							<img class="imagenes" src="img/KNY/02eb3fb81290b1a94853fa492988426f.jpg" alt="Images KNY"
+								title="Kyōjurō Rengoku" data-bs-toggle="modal" data-bs-target="#myModal">
 						</div>
 						<div class="alert cell link-opacity-25-hover col-lg-auto col-md-auto col-sm-auto">
-							<img id="imagenes" class="imagenes" src="img/KNY/212f1f8c012389e11594274938ba52f0.jpg"
-								alt="Images KNY" title="Espada de Kyōjurō Rengoku">
-						</div>
-					</div>
-					<div class="col col-sm-12 col-md-6 col-lg-3">
-						<div class="alert cell link-opacity-25-hover col-lg-auto col-md-auto col-sm-auto">
-							<img id="imagenes" class="imagenes" src="img/KNY/0ab6649c55c4803143ea6a7cc267638a.jpg"
-								alt="Images KNY" title="Kyōjurō Rengoku">
-						</div>
-						<div class="alert cell link-opacity-25-hover col-lg-auto col-md-auto col-sm-auto">
-							<img id="imagenes" class="imagenes" src="img/KNY/3ea227c04050a66e2bddae5f3d02eea0.jpg"
-								alt="Images KNY" title="Giyū Tomioka">
+							<img class="imagenes" src="img/KNY/212f1f8c012389e11594274938ba52f0.jpg" alt="Images KNY"
+								title="Espada de Kyōjurō Rengoku" data-bs-toggle="modal" data-bs-target="#myModal">
 						</div>
 					</div>
 					<div class="col col-sm-12 col-md-6 col-lg-3">
 						<div class="alert cell link-opacity-25-hover col-lg-auto col-md-auto col-sm-auto">
-							<img id="imagenes" class="imagenes" src="img/KNY/9490605e591022e9af2dbfb9ac5d01b8.jpg"
-								alt="Images KNY" title="Tanjiro Kamado">
+							<img class="imagenes" src="img/KNY/0ab6649c55c4803143ea6a7cc267638a.jpg" alt="Images KNY"
+								title="Kyōjurō Rengoku" data-bs-toggle="modal" data-bs-target="#myModal">
 						</div>
 						<div class="alert cell link-opacity-25-hover col-lg-auto col-md-auto col-sm-auto">
-							<img id="imagenes" class="imagenes" src="img/KNY/a1d87d7916b8487785d9dd8b171b5794.jpg"
-								alt="Images KNY" title="Tanjiro Kamado">
+							<img class="imagenes" src="img/KNY/3ea227c04050a66e2bddae5f3d02eea0.jpg" alt="Images KNY"
+								title="Giyū Tomioka" data-bs-toggle="modal" data-bs-target="#myModal">
 						</div>
 					</div>
 					<div class="col col-sm-12 col-md-6 col-lg-3">
 						<div class="alert cell link-opacity-25-hover col-lg-auto col-md-auto col-sm-auto">
-							<img id="imagenes" class="imagenes" src="img/KNY/aa806764e2fa9372e5abf404a4d5b4c3.jpg"
-								alt="Images KNY" title="Tanjiro Kamado">
+							<img class="imagenes" src="img/KNY/9490605e591022e9af2dbfb9ac5d01b8.jpg" alt="Images KNY"
+								title="Tanjiro Kamado" data-bs-toggle="modal" data-bs-target="#myModal">
 						</div>
 						<div class="alert cell link-opacity-25-hover col-lg-auto col-md-auto col-sm-auto">
-							<img id="imagenes" class="imagenes" src="img/KNY/a11bda4cfd5b0bd4b6856bf0935e5e5f.jpg"
-								alt="Images KNY" title="Tengen Uzui">
+							<img class="imagenes" src="img/KNY/a1d87d7916b8487785d9dd8b171b5794.jpg" alt="Images KNY"
+								title="Tanjiro Kamado" data-bs-toggle="modal" data-bs-target="#myModal">
+						</div>
+					</div>
+					<div class="col col-sm-12 col-md-6 col-lg-3">
+						<div class="alert cell link-opacity-25-hover col-lg-auto col-md-auto col-sm-auto">
+							<img class="imagenes" src="img/KNY/aa806764e2fa9372e5abf404a4d5b4c3.jpg" alt="Images KNY"
+								title="Tanjiro Kamado" data-bs-toggle="modal" data-bs-target="#myModal">
+						</div>
+						<div class="alert cell link-opacity-25-hover col-lg-auto col-md-auto col-sm-auto">
+							<img class="imagenes" src="img/KNY/a11bda4cfd5b0bd4b6856bf0935e5e5f.jpg" alt="Images KNY"
+								title="Tengen Uzui" data-bs-toggle="modal" data-bs-target="#myModal">
 						</div>
 					</div>
 				</div>
 			</article>
 		</section>
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+			aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content bg-dark text-white">
+					<div class="modal-header ">
+						<h1 class="modal-title text-center fs-5 " id="staticBackdropLabel"><i
+								class="fa-solid fa-user-ninja fa-fade"></i> &eDDot; Imagenes de Kimetsu no Yaiba
+						</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body text-center">
+						<img id="modalImage" class="img-fluid" src="" alt="Imagen Ampliada">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+						<button type="button" class="btn btn-outline-success">Entendido</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</main>
 	<!-- !! Footer de la Página -->
 	<footer id="pie-pagina" class="border border-1 rounded-pill border-dark border-opacity-50 text-white py-3">
 		<div class="col-lg-12 table-responsive">
-			<div class=" container-fluid text-center">
+			<div class="container-fluid text-center">
 				<cite title="Source title">
 					<p class="lead m-0"><strong>Copyright &copy; Anthony J. Rojas Valdez.</strong>
-						<a href="https://github.com/AntRed1"><i class="fa fa-github fs-3 " aria-hidden="true"></i></a>
+						<a href="https://github.com/AntRed1"><i class="fa fa-github fs-3" aria-hidden="true"></i></a>
 					</p>
 				</cite>
 			</div>
 		</div>
 	</footer>
 	<script class="imagenes" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-		integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-		crossorigin="anonymous"></script>
+		integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+		</script>
 	<script class="imagenes" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-		integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-		crossorigin="anonymous"></script>
+		integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+		</script>
 	<!-- ! CDN Fontawesome -->
 	<script class="imagenes" src="https://kit.fontawesome.com/1ae4b6ae42.js" crossorigin="anonymous"></script>
 	<!--! CDN Fontawesome -->

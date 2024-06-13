@@ -1,3 +1,4 @@
+/* Estilos generales */
 :root {
   color-scheme: light dark;
 }
@@ -33,6 +34,16 @@ img {
   background-color: #efedea;
   padding: 15px;
   width: 100%;
-  box-shadow: 0 0 15px rgb(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgb(133, 130, 130);
   cursor: pointer;
+}
+
+.modal-body img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+i {
+  color: rgb(70, 24, 168);
 }
