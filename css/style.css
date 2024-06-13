@@ -1,0 +1,38 @@
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  color: light-dark(#333b3c, #efefec);
+  background-color: light-dark(#efedea, #2b303b);
+  font-family: system-ui, -apple-system, blinkmacsystemfont, "segoe ui", roboto,
+    oxygen, ubuntu, cantarell, "open sans", "helvetica neue", sans-serif;
+}
+
+.link-opacity-25-hover:hover {
+  opacity: 0.5;
+}
+
+.cell {
+  height: 290px;
+  width: 290px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.gallery img {
+  background-color: #efedea;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0 0 15px rgb(0, 0, 0, 0.3);
+  cursor: pointer;
+}
