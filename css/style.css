@@ -47,3 +47,81 @@ img {
 i {
   color: rgb(70, 24, 168);
 }
+
+#pie-pagina a:hover {
+  color: #007bff;
+}
+
+#pie-pagina i {
+  margin-left: 10px;
+}
+
+#pie-pagina p {
+  margin: 5px 0;
+}
+
+#pie-pagina .fa-bolt {
+  transition: transform 0.3s ease;
+}
+
+#pie-pagina .fa-bolt:hover {
+  transform: scale(1.6);
+}
+
+/* Icons */
+.icon-light::before {
+  content: "☀️"; /* Replace sun icon */
+}
+
+.icon-dark::before {
+  content: "🌙"; /* Replace moon icon */
+}
+
+.copy-right {
+  margin-bottom: 0;
+}
+
+/* Styles for switch icons */
+.icon-light,
+.icon-dark {
+  font-size: 20px;
+  display: none;
+}
+
+.form-check-input:checked ~ .form-check-label .icon-light {
+  display: none;
+}
+
+.form-check-input:not(:checked) ~ .form-check-label .icon-dark {
+  display: none;
+}
+
+.form-check-input:checked ~ .form-check-label .icon-dark {
+  display: inline-block;
+}
+
+.form-check-input:not(:checked) ~ .form-check-label .icon-light {
+  display: inline-block;
+}
+
+.social-media-list {
+  padding: 20px;
+}
+
+.social-media-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-media-list ul li {
+  margin-bottom: 10px;
+}
+
+.social-media-list ul li a {
+  text-decoration: none;
+  color: #402aaf;
+}
+
+.social-media-list ul li a:hover {
+  color: #97ae94;
+}
