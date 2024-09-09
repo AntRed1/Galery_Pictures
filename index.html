@@ -20,6 +20,11 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -64,7 +69,7 @@
                   >
                     Redes Sociales
                   </a>
-				  
+
                   <ul class="dropdown-menu">
                     <li
                       class="dropdown-item"
@@ -75,11 +80,16 @@
                       Anthony Rojas ⚡
                     </li>
                   </ul>
-				  
                 </li>
-				
+                <button
+                  type="button"
+                  class="btn btn-outline-success"
+                  id="uploadNavBtn"
+                >
+                  <i class="fa-solid fa-upload"></i> Subir imagen
+                </button>
               </ul>
-              <!--* Bootstrap V5.3 switch DarkMode/LightMode -->
+              <!-- Bootstrap V5.3 switch DarkMode/LightMode -->
               <div class="dropdown-center form-check form-switch">
                 <input
                   class="form-check-input"
@@ -98,71 +108,72 @@
       </div>
 
       <!--* Columna para redes sociales de Anthony Rojas -->
-      <div class="container"></div>
-      <div
-        class="offcanvas offcanvas-start"
-        data-bs-backdrop="static"
-        tabindex="-1"
-        id="anthonyOffcanvas"
-        aria-labelledby="anthonyOffcanvasLabel"
-      >
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="anthonyOffcanvasLabel">
-            Redes Sociales
-          </h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="list-unstyled social-media-list">
-            <li class="alert alert-dark" role="alert">
-              <h4>
-                Anthony Rojas
-                <img
-                  src="https://github.com/AntRed1.png"
-                  alt="photo"
-                  class="img-fluid rounded-circle"
-                  style="width: 50px; height: 50px"
-                />
-              </h4>
-              <ul class="list-unstyled">
-                <li>
-                  <a
-                    href="mailto:anthonyatras@gmail.com"
-                    target="_blank"
-                    aria-label="Correo Electrónico"
-                  >
-                    <i class="fa-solid fa-envelope"></i>
-                    Correo
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/anthony-j-rojas-v-29b26a207/"
-                    target="_blank"
-                    aria-label="LinkedIn"
-                  >
-                    <i class="fa-brands fa-linkedin"></i>
-                    LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/AntRed1"
-                    target="_blank"
-                    aria-label="GitHub"
-                  >
-                    <i class="fa fa-github fs-3" aria-hidden="true"></i>
-                    GitHub
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+      <div class="container">
+        <div
+          class="offcanvas offcanvas-start"
+          data-bs-backdrop="static"
+          tabindex="-1"
+          id="anthonyOffcanvas"
+          aria-labelledby="anthonyOffcanvasLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="anthonyOffcanvasLabel">
+              Redes Sociales
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="list-unstyled social-media-list">
+              <li class="alert alert-dark" role="alert">
+                <h4>
+                  Anthony Rojas
+                  <img
+                    src="https://github.com/AntRed1.png"
+                    alt="photo"
+                    class="img-fluid rounded-circle"
+                    style="width: 50px; height: 50px"
+                  />
+                </h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="mailto:anthonyatras@gmail.com"
+                      target="_blank"
+                      aria-label="Correo Electrónico"
+                    >
+                      <i class="fa-solid fa-envelope"></i>
+                      Correo
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/anthony-j-rojas-v-29b26a207/"
+                      target="_blank"
+                      aria-label="LinkedIn"
+                    >
+                      <i class="fa-brands fa-linkedin"></i>
+                      LinkedIn
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/AntRed1"
+                      target="_blank"
+                      aria-label="GitHub"
+                    >
+                      <i class="fa fa-github fs-3" aria-hidden="true"></i>
+                      GitHub
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -170,10 +181,9 @@
     <!--! Main -->
     <main class="container-fluid alert table-responsive-md">
       <section>
-		 
         <article class="gallery min-vh-100">
-			<!--* Contenedor de Imagenes -->
-          <div class="row container-fluid alert">
+          <!--* Contenedor de Imagenes -->
+          <div class="row container-fluid alert" id="imageGallery">
             <div class="col col-sm-12 col-md-6 col-lg-3">
               <div
                 class="alert cell link-opacity-25-hover col-lg-auto col-md-auto col-sm-auto"
@@ -370,7 +380,7 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
-	<!--! SWEET ALERT V11 -->
+    <!--! SWEET ALERT V11 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!--! CDN Fontawesome -->
